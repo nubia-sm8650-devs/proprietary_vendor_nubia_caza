@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="no"?>
+<mfnr_network_denoise_config>
+    <PhoneConfigParam target_brightness="0.5f" cache_path="/data/vendor/camera/" phone_id="NX712J_32_0" 
+        k1_net="0.0004897055f" k2_net="0.01507620f" s1_net="7.910723e-7f" s2_net="0.002898401f"
+        s3_net="-1.223214f" black_level_net="64" white_level_net="1023" iso_a="2000"
+        model_width="528" model_height="528" tflite_model="tflite_model_denoised_528_528">
+        <CameraConfigParam camera_id="0" factor_rough="8" k1_camera="0.0004990743188275732f"
+            k2_camera="-0.004905349592507713f" s1_camera="8.159870039922353e-07f"
+            s2_camera="0.0009510717756422594f" s3_camera="0.48233114578518527f"
+            black_level_camera="64" white_level_camera="1023" max_analog_iso="6400" num_w="4"
+            num_h="3" threshold_dpc_luma_percent="0.005f"></CameraConfigParam>
+        <CameraConfigParam camera_id="1" factor_rough="8" k1_camera="0.0007957068025466992f" k2_camera="0.10705344590965171f" 
+            s1_camera="3.2259244531691813e-06f" s2_camera="0.008776667992147734f" s3_camera="2.1156294234436865f"
+            black_level_camera="64" white_level_camera="1023" max_analog_iso="1550" num_w="2"
+            num_h="2" threshold_dpc_luma_percent="0.005f" min_net_ratio="0.9f" target_brightness="1.0f"></CameraConfigParam>
+    </PhoneConfigParam>
+        <Mode name="udc">
+        <CameraConfigParam camera_id="1"  clahe_strength="0.5f" roi_clahe_strength="0.0f" raw_dehaze="0.0f"></CameraConfigParam>
+    </Mode>
+</mfnr_network_denoise_config>

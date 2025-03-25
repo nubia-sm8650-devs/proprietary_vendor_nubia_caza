@@ -1,0 +1,9 @@
+EISv2OperationMode=0
+EISv3OperationMode=0
+EISWidthMargin=0.2
+EISHeightMargin=0.2
+EISLDCGridEnabled=1
+EISv3DisableOIS=0
+EISv2DisableOIS=0
+EISv2InputDumpLogcatEnabled=0
+EISOISMode=2

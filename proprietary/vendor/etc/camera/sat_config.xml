@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<sat_config>
+    <SatConfigParam ultra_camera_ratio="0.5265f" wide_camera_ratio="1.0f" tele_camera_ratio="2.4324f"
+    ultra_wide_afocal_2="0.0f" ultra_wide_afocal_5="0.0f" wide_tele_afocal_2="-17.00f" wide_tele_afocal_5="-2.0f"
+    ultra_wide_2="0.0f" ultra_wide_5="0.0f" wide_tele_2="-17.00f" wide_tele_5="-2.0f"
+    fallback_ultra_wide_2="31.0f" fallback_ultra_wide_5="2.0f">
+    </SatConfigParam>
+    <SatVideoConfigParam video_ultra_camera_ratio="0.53f" video_wide_camera_ratio="1.0f" video_tele_camera_ratio="2.44f"
+    video_ultra_camera_ratio_60fps="0.5f" video_wide_camera_ratio_60fps="1.0f" video_tele_camera_ratio_60fps="2.75f"
+    video_ultra_wide_afocal_2="13.140530f" video_ultra_wide_afocal_5="3.974681f" video_wide_tele_afocal_2="-17.00f" video_wide_tele_afocal_5="-2.0f"
+    video_ultra_wide_2="0.0f" video_ultra_wide_5="0.0f" video_wide_tele_2="-17.00f" video_wide_tele_5="22.0f"
+    video_fallback_ultra_wide_2="31.0f" video_fallback_ultra_wide_5="2.0f" video_fallback_wide_tele_2="-11.0f" video_fallback_wide_tele_5="78.0f">
+    </SatVideoConfigParam>
+</sat_config>

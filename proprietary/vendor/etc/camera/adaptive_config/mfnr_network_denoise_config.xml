@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="no"?>
+<mfnr_network_denoise_config>
+    <PhoneConfigParam target_brightness="0.35f" cache_path="/data/data/com.android.camera/cache/" phone_id="NX721J"
+        k1_net="0.0004897055f" k2_net="0.01507620f" s1_net="7.910723e-7f" s2_net="0.002898401f"
+        s3_net="-1.223214f" black_level_net="64" white_level_net="1023" iso_a="2000"
+        model_width="528" model_height="528" tflite_model="tflite_model_denoised_528_528">
+        <CameraConfigParam camera_id="0" factor_rough="8" k1_camera="0.0003002164773861618f"
+            k2_camera="0.003833347175094315f" s1_camera="1.1791051769033198e-07" s2_camera="0.0008303130251440105" s3_camera="0.3314298344823331"
+            black_level_camera="64" white_level_camera="1023" max_analog_iso="6400" num_w="4"
+            num_h="3" threshold_dpc_luma_percent="0.005f" clahe_strength="1.0f"></CameraConfigParam>
+        <CameraConfigParam camera_id="1" factor_rough="8" k1_camera="0.0005954980601593063f"
+            k2_camera="0.00881361268494385f" s1_camera="1.2736085651143634e-06f"
+            s2_camera="0.0011864564275292774f" s3_camera="0.03445613589013786f"
+            black_level_camera="64" white_level_camera="1023" max_analog_iso="1550" num_w="3"
+            num_h="2" threshold_dpc_luma_percent="0.005f" min_net_ratio="0.7f" target_brightness="1.0f"></CameraConfigParam>
+        <CameraConfigParam camera_id="2" factor_rough="8" k1_camera="0.0004161189352205889f" k2_camera="-0.006530174089714347f" 
+            s1_camera="1.8169557222842072e-07f" s2_camera="0.0013489479699888426f" s3_camera="0.47654258311309466f"
+            black_level_camera="64" white_level_camera="1023" max_analog_iso="1550" num_w="4"
+            num_h="3" threshold_dpc_luma_percent="0.02f" min_net_ratio="0.9f" clahe_strength="1.0f"></CameraConfigParam>
+        <CameraConfigParam camera_id="3" factor_rough="8" k1_camera="0.000638086456057819f"
+            k2_camera="-0.02524397867743966f" s1_camera="9.412475017838612e-07f"
+            s2_camera="0.0027624054214249534f" s3_camera="0.4842212091378713f"
+            black_level_camera="64" white_level_camera="1023" max_analog_iso="1000" num_w="5"
+            num_h="4" threshold_dpc_luma_percent="0.015f" target_brightness="0.2f" ></CameraConfigParam>
+
+    </PhoneConfigParam>
+</mfnr_network_denoise_config>
