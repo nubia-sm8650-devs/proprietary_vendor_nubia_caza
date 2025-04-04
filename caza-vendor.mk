@@ -1153,7 +1153,6 @@ PRODUCT_PACKAGES += \
     libhdr10plus \
     libhdr_backlight_adapter \
     libhdr_tm \
-    libhistogram \
     libhotword_intf \
     libidl \
     libintervmipc \
