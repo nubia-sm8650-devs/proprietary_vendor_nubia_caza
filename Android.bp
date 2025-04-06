@@ -30866,14 +30866,6 @@ sh_binary {
     soc_specific: true,
 }
 
-sh_binary {
-    name: "init.ssdaemon_vendor",
-    owner: "nubia",
-    src: "proprietary/vendor/bin/init.ssdaemon_vendor.sh",
-    filename: "init.ssdaemon_vendor.sh",
-    soc_specific: true,
-}
-
 cc_prebuilt_binary {
     name: "irsc_util",
     owner: "nubia",

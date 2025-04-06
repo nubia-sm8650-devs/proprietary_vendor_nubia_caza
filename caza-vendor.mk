@@ -30,8 +30,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/caza/proprietary/system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_telephony_system_packages_config.xml \
     vendor/nubia/caza/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
     vendor/nubia/caza/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
-    vendor/nubia/caza/proprietary/vendor/etc/Hapticsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/Hapticsconfig.xml \
-    vendor/nubia/caza/proprietary/vendor/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
     vendor/nubia/caza/proprietary/vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb \
     vendor/nubia/caza/proprietary/vendor/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp \
     vendor/nubia/caza/proprietary/vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd \
@@ -73,20 +71,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/caza/proprietary/vendor/etc/acdbdata/pineapple_mtp/MTP_acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/pineapple_mtp/MTP_acdb_cal.acdb \
     vendor/nubia/caza/proprietary/vendor/etc/acdbdata/pineapple_mtp/MTP_workspaceFileXml.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/pineapple_mtp/MTP_workspaceFileXml.qwsp \
     vendor/nubia/caza/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
-    vendor/nubia/caza/proprietary/vendor/etc/audio/sku_pineapple/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pineapple/audio_effects.conf \
-    vendor/nubia/caza/proprietary/vendor/etc/audio/sku_pineapple/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pineapple/audio_effects.xml \
-    vendor/nubia/caza/proprietary/vendor/etc/audio/sku_pineapple/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pineapple/audio_policy_configuration.xml \
-    vendor/nubia/caza/proprietary/vendor/etc/audio/sku_pineapple/mixer_paths_pineapple_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pineapple/mixer_paths_pineapple_mtp.xml \
-    vendor/nubia/caza/proprietary/vendor/etc/audio/sku_pineapple/resourcemanager_pineapple_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pineapple/resourcemanager_pineapple_mtp.xml \
-    vendor/nubia/caza/proprietary/vendor/etc/audio/sku_pineapple_qssi/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pineapple_qssi/audio_effects.xml \
-    vendor/nubia/caza/proprietary/vendor/etc/audio/sku_pineapple_qssi/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pineapple_qssi/audio_policy_configuration.xml \
-    vendor/nubia/caza/proprietary/vendor/etc/audio/sku_pineapple_qssi/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pineapple_qssi/audio_policy_volumes.xml \
-    vendor/nubia/caza/proprietary/vendor/etc/audio/sku_pineapple_qssi/zaudio_service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_pineapple_qssi/zaudio_service.xml \
-    vendor/nubia/caza/proprietary/vendor/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
-    vendor/nubia/caza/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     vendor/nubia/caza/proprietary/vendor/etc/batching.conf:$(TARGET_COPY_OUT_VENDOR)/etc/batching.conf \
-    vendor/nubia/caza/proprietary/vendor/etc/bluetooth_qti_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_audio_policy_configuration.xml \
-    vendor/nubia/caza/proprietary/vendor/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml \
     vendor/nubia/caza/proprietary/vendor/etc/camera/VNSConfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/VNSConfig.xml \
     vendor/nubia/caza/proprietary/vendor/etc/camera/VNSConfig_4k.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/VNSConfig_4k.xml \
     vendor/nubia/caza/proprietary/vendor/etc/camera/VNSQnnBinary.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/VNSQnnBinary.bin \
@@ -355,7 +340,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/caza/proprietary/vendor/etc/camera/vlog_app/vlog_demo_slowmotion.mp4:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vlog_app/vlog_demo_slowmotion.mp4 \
     vendor/nubia/caza/proprietary/vendor/etc/camera/vlog_app/vlog_demo_soothing.mp4:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vlog_app/vlog_demo_soothing.mp4 \
     vendor/nubia/caza/proprietary/vendor/etc/camera/widelencalc_cali.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/widelencalc_cali.bin \
-    vendor/nubia/caza/proprietary/vendor/etc/card-defs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/card-defs.xml \
     vendor/nubia/caza/proprietary/vendor/etc/charger_fw_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fw_fstab.qti \
     vendor/nubia/caza/proprietary/vendor/etc/clstc_config_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/clstc_config_library.xml \
     vendor/nubia/caza/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
@@ -394,8 +378,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/caza/proprietary/vendor/etc/data/nicm_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/nicm_config.xml \
     vendor/nubia/caza/proprietary/vendor/etc/data/tlpd_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/tlpd_oem_config.xml \
     vendor/nubia/caza/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
-    vendor/nubia/caza/proprietary/vendor/etc/default_audio_logmask.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/default_audio_logmask.cfg \
-    vendor/nubia/caza/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     vendor/nubia/caza/proprietary/vendor/etc/display/DPU10__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU10__.xml \
     vendor/nubia/caza/proprietary/vendor/etc/display/DPU9__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU9__.xml \
     vendor/nubia/caza/proprietary/vendor/etc/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml \
@@ -505,8 +487,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/caza/proprietary/vendor/etc/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml \
     vendor/nubia/caza/proprietary/vendor/etc/media_pineapple/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_pineapple/video_system_specs.json \
     vendor/nubia/caza/proprietary/vendor/etc/media_profiles_pineapple.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_pineapple.xml \
-    vendor/nubia/caza/proprietary/vendor/etc/mem_logger_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mem_logger_config.xml \
-    vendor/nubia/caza/proprietary/vendor/etc/microphone_characteristics.xml:$(TARGET_COPY_OUT_VENDOR)/etc/microphone_characteristics.xml \
     vendor/nubia/caza/proprietary/vendor/etc/models/acd/environment.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/environment.eai \
     vendor/nubia/caza/proprietary/vendor/etc/models/acd/event.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/event.eai \
     vendor/nubia/caza/proprietary/vendor/etc/models/acd/music.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/music.eai \
@@ -540,7 +520,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/caza/proprietary/vendor/etc/qcril_database/upgrade/other/0013_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0013_version_update_ecc_table.sql \
     vendor/nubia/caza/proprietary/vendor/etc/qcril_database/upgrade/other/0014_version_update_modules.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0014_version_update_modules.sql \
     vendor/nubia/caza/proprietary/vendor/etc/qcril_database/upgrade/other/0015_version_add_iccid_clir_pref_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0015_version_add_iccid_clir_pref_table.sql \
-    vendor/nubia/caza/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     vendor/nubia/caza/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     vendor/nubia/caza/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/nubia/caza/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
@@ -638,14 +617,11 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/caza/proprietary/vendor/etc/sensors/config/sns_wrist_pedo.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_wrist_pedo.json \
     vendor/nubia/caza/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/nubia/caza/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
-    vendor/nubia/caza/proprietary/vendor/etc/smartpa_calibration_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/smartpa_calibration_config.xml \
     vendor/nubia/caza/proprietary/vendor/etc/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml \
     vendor/nubia/caza/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/nubia/caza/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/nubia/caza/proprietary/vendor/etc/telephony_packages.xml:$(TARGET_COPY_OUT_VENDOR)/etc/telephony_packages.xml \
     vendor/nubia/caza/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
-    vendor/nubia/caza/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
-    vendor/nubia/caza/proprietary/vendor/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml \
     vendor/nubia/caza/proprietary/vendor/etc/vmmgr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/vmmgr.conf \
     vendor/nubia/caza/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
     vendor/nubia/caza/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
@@ -1797,7 +1773,6 @@ PRODUCT_PACKAGES += \
     init.qti.media \
     init.qti.qcv \
     init.qti.write \
-    init.ssdaemon_vendor \
     irsc_util \
     ks \
     loadalgo \
