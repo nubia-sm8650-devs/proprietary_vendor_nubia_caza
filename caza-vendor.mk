@@ -255,6 +255,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/caza/proprietary/vendor/etc/camera/icon/colorfilter_mono3.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_mono3.png \
     vendor/nubia/caza/proprietary/vendor/etc/camera/icon/colorfilter_mono4.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_mono4.png \
     vendor/nubia/caza/proprietary/vendor/etc/camera/icon/colorfilter_mountain.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_mountain.png \
+    vendor/nubia/caza/proprietary/vendor/etc/camera/icon/colorfilter_newyear.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_newyear.png \
     vendor/nubia/caza/proprietary/vendor/etc/camera/icon/colorfilter_passion.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_passion.png \
     vendor/nubia/caza/proprietary/vendor/etc/camera/icon/colorfilter_pt160.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_pt160.png \
     vendor/nubia/caza/proprietary/vendor/etc/camera/icon/colorfilter_punch.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/colorfilter_punch.png \
@@ -293,10 +294,8 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/caza/proprietary/vendor/etc/camera/icon/v_mirror_fs.c:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/v_mirror_fs.c \
     vendor/nubia/caza/proprietary/vendor/etc/camera/icon/vignette.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/vignette.png \
     vendor/nubia/caza/proprietary/vendor/etc/camera/icon/water_mark_drawable_black.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black.argb \
-    vendor/nubia/caza/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_Z60.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_Z60.argb \
     vendor/nubia/caza/proprietary/vendor/etc/camera/icon/water_mark_drawable_black_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_black_eng.argb \
     vendor/nubia/caza/proprietary/vendor/etc/camera/icon/water_mark_drawable_white.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white.argb \
-    vendor/nubia/caza/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_Z60.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_Z60.argb \
     vendor/nubia/caza/proprietary/vendor/etc/camera/icon/water_mark_drawable_white_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_drawable_white_eng.argb \
     vendor/nubia/caza/proprietary/vendor/etc/camera/icon/water_mark_v1a_drawable_black.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_v1a_drawable_black.argb \
     vendor/nubia/caza/proprietary/vendor/etc/camera/icon/water_mark_v1a_drawable_black_eng.argb:$(TARGET_COPY_OUT_VENDOR)/etc/camera/icon/water_mark_v1a_drawable_black_eng.argb \
@@ -992,6 +991,7 @@ PRODUCT_PACKAGES += \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
     libbt-hidlclient \
+    libbtaudio_intermediate_shared \
     libbtnv \
     libc++_shared \
     libcacertclient \
@@ -1310,6 +1310,7 @@ PRODUCT_PACKAGES += \
     libtensorflowlite_gpu_jni \
     libtensorflowlite_jni_vendor \
     libtestutils \
+    libtflite_model_depurple_544_544 \
     libthermalclient \
     libthreadutils \
     libtime_genoff \

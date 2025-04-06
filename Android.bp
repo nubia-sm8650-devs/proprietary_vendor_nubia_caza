@@ -64,6 +64,7 @@ cc_prebuilt_library_shared {
                 "libbluetooth_audio_session_qti_2_1",
                 "vendor.qti.hardware.bluetooth.audio-V1-ndk",
                 "android.hardware.bluetooth.audio-impl-qti",
+                "libbtaudio_intermediate_shared",
                 "libc++",
                 "libc",
                 "libm",
@@ -9173,6 +9174,36 @@ cc_prebuilt_library_shared {
                 "com.dsi.ant@1.0",
                 "vendor.qti.hardware.fm@1.0",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libbtaudio_intermediate_shared",
+    owner: "nubia",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libbtaudio_intermediate_shared.so",
+            ],
+            shared_libs: [
+                "libbinder",
+                "libbase",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -18901,6 +18932,29 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libtflite_model_depurple_544_544",
+    owner: "nubia",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtflite_model_depurple_544_544.so",
+            ],
+            shared_libs: [
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libthermalclient",
     owner: "nubia",
     strip: {
@@ -20358,6 +20412,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libtensorflowlite_jni_vendor",
                 "libtensorflowlite_gpu_jni",
+                "libtflite_model_depurple_544_544",
                 "libm",
                 "libdl",
                 "libc",
