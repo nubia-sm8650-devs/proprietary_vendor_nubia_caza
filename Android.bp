@@ -16297,10 +16297,10 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "libutils",
                 "libhidlbase",
-                "vendor.qti.qesdhal@1.0",
-                "vendor.qti.qesdhal@1.1",
-                "vendor.qti.qesdhal@1.2",
-                "vendor.qti.qesdhal@1.3",
+                "vendor.qti.qesdhal@1.0_vendor",
+                "vendor.qti.qesdhal@1.1_vendor",
+                "vendor.qti.qesdhal@1.2_vendor",
+                "vendor.qti.qesdhal@1.3_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -26378,7 +26378,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.qesdhal@1.0",
+    name: "vendor.qti.qesdhal@1.0_vendor",
+    stem: "vendor.qti.qesdhal@1.0",
     owner: "nubia",
     strip: {
         none: true,
@@ -26406,7 +26407,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.qesdhal@1.1",
+    name: "vendor.qti.qesdhal@1.1_vendor",
+    stem: "vendor.qti.qesdhal@1.1",
     owner: "nubia",
     strip: {
         none: true,
@@ -26417,7 +26419,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.qti.qesdhal@1.1.so",
             ],
             shared_libs: [
-                "vendor.qti.qesdhal@1.0",
+                "vendor.qti.qesdhal@1.0_vendor",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -26435,7 +26437,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.qesdhal@1.2",
+    name: "vendor.qti.qesdhal@1.2_vendor",
+    stem: "vendor.qti.qesdhal@1.2",
     owner: "nubia",
     strip: {
         none: true,
@@ -26446,8 +26449,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.qti.qesdhal@1.2.so",
             ],
             shared_libs: [
-                "vendor.qti.qesdhal@1.0",
-                "vendor.qti.qesdhal@1.1",
+                "vendor.qti.qesdhal@1.0_vendor",
+                "vendor.qti.qesdhal@1.1_vendor",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -26465,7 +26468,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.qesdhal@1.3",
+    name: "vendor.qti.qesdhal@1.3_vendor",
+    stem: "vendor.qti.qesdhal@1.3",
     owner: "nubia",
     strip: {
         none: true,
@@ -26476,9 +26480,9 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.qti.qesdhal@1.3.so",
             ],
             shared_libs: [
-                "vendor.qti.qesdhal@1.0",
-                "vendor.qti.qesdhal@1.1",
-                "vendor.qti.qesdhal@1.2",
+                "vendor.qti.qesdhal@1.0_vendor",
+                "vendor.qti.qesdhal@1.1_vendor",
+                "vendor.qti.qesdhal@1.2_vendor",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -27491,6 +27495,42 @@ cc_prebuilt_library_shared {
                 "android.hardware.common-V2-ndk",
                 "vendor.qti.qccvndhal_aidl-V1-ndk",
                 "vendor.qti.qccsyshal_aidl-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqesdk_ndk_platform.qti",
+    owner: "nubia",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libqesdk_ndk_platform.qti.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libutils",
+                "vendor.qti.qesdhal@1.0",
+                "vendor.qti.qesdhal@1.1",
+                "vendor.qti.qesdhal@1.2",
+                "vendor.qti.qesdhalaidl-V2-ndk",
+                "libbinder_ndk",
+                "liblog",
+                "libcutils",
+                "libcrypto",
+                "libjsoncpp",
+                "libnativehelper",
                 "libc++",
                 "libc",
                 "libm",
@@ -28586,6 +28626,118 @@ cc_prebuilt_library_shared {
     system_ext_specific: true,
 }
 
+cc_prebuilt_library_shared {
+    name: "vendor.qti.qesdhal@1.0",
+    owner: "nubia",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.qti.qesdhal@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.qesdhal@1.1",
+    owner: "nubia",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.qti.qesdhal@1.1.so",
+            ],
+            shared_libs: [
+                "vendor.qti.qesdhal@1.0",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.qesdhal@1.2",
+    owner: "nubia",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.qti.qesdhal@1.2.so",
+            ],
+            shared_libs: [
+                "vendor.qti.qesdhal@1.0",
+                "vendor.qti.qesdhal@1.1",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.qesdhalaidl-V2-ndk",
+    owner: "nubia",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.qti.qesdhalaidl-V2-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
 android_app_import {
     name: "CACertService",
     owner: "nubia",
@@ -28659,6 +28811,17 @@ android_app_import {
     name: "QCC",
     owner: "nubia",
     apk: "proprietary/system_ext/app/QCC/QCC.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "QesdkSysService",
+    owner: "nubia",
+    apk: "proprietary/system_ext/app/QesdkSysService/QesdkSysService.apk",
     certificate: "platform",
     dex_preopt: {
         enabled: false,
@@ -29478,6 +29641,15 @@ prebuilt_etc_xml {
     name: "vendor.qti.qccsyshal_aidl-service.xml",
     owner: "nubia",
     src: "proprietary/system_ext/etc/vintf/manifest/vendor.qti.qccsyshal_aidl-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    system_ext_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.qti.qesdsys.service.xml",
+    owner: "nubia",
+    src: "proprietary/system_ext/etc/vintf/manifest/vendor.qti.qesdsys.service.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     system_ext_specific: true,

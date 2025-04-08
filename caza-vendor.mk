@@ -1544,10 +1544,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.qccvndhal_aidl-V1-ndk_vendor \
     vendor.qti.qccvndhal_aidl-halimpl \
     vendor.qti.qesdhal-impl \
-    vendor.qti.qesdhal@1.0 \
-    vendor.qti.qesdhal@1.1 \
-    vendor.qti.qesdhal@1.2 \
-    vendor.qti.qesdhal@1.3 \
+    vendor.qti.qesdhal@1.0_vendor \
+    vendor.qti.qesdhal@1.1_vendor \
+    vendor.qti.qesdhal@1.2_vendor \
+    vendor.qti.qesdhal@1.3_vendor \
     vendor.qti.qesdhalaidl-V1-ndk \
     vendor.qti.qesdsys-V3-ndk \
     vendor.qti.qesdsys-V4-ndk \
@@ -1592,6 +1592,7 @@ PRODUCT_PACKAGES += \
     libqcc_file_agent_sys \
     libqccdme \
     libqccfileservice \
+    libqesdk_ndk_platform.qti \
     libwfdavenhancements \
     libwfdclient \
     libwfdcommonutils \
@@ -1626,6 +1627,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.qccsyshal_aidl-V1-ndk \
     vendor.qti.qccsyshal_aidl-halimpl \
     vendor.qti.qccvndhal_aidl-V1-ndk \
+    vendor.qti.qesdhal@1.0 \
+    vendor.qti.qesdhal@1.1 \
+    vendor.qti.qesdhal@1.2 \
+    vendor.qti.qesdhalaidl-V2-ndk \
     CACertService \
     CneApp \
     IWlanService \
@@ -1633,6 +1638,7 @@ PRODUCT_PACKAGES += \
     uimgbaservice \
     ImsRcsService \
     QCC \
+    QesdkSysService \
     QtiTelephonyService \
     WfdService \
     dpmserviceapp \
@@ -1722,6 +1728,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qspmhal-service.xml \
     vendor.zte.radio-manifest-ds.xml \
     vendor.qti.qccsyshal_aidl-service.xml \
+    vendor.qti.qesdsys.service.xml \
     ATFWD-daemon \
     adpl \
     adsprpcd \
