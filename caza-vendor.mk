@@ -881,7 +881,6 @@ PRODUCT_PACKAGES += \
     com.dsi.ant@1.0-impl \
     com.qti.chi.offline \
     com.qti.chi.override \
-    consumerir.pineapple \
     libqtigatekeeper \
     sensors.hal.tof \
     vendor.qti.hardware.alarm-impl \
