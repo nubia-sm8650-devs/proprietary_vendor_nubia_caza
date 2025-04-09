@@ -1557,7 +1557,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.qspmhal-impl \
     vendor.qti.spu@2.0 \
     vendor.qti.voiceprint@1.0 \
-    vendor.zte.fingerprint.ztecmdaidl-V1-ndk_platform \
     vendor.zte.hardware.camera.transfer-V1-ndk \
     vendor.zte.radio-V1-ndk \
     libDspIOProxy_skel \

@@ -26756,31 +26756,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.zte.fingerprint.ztecmdaidl-V1-ndk_platform",
-    owner: "nubia",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.zte.fingerprint.ztecmdaidl-V1-ndk_platform.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.zte.hardware.camera.transfer-V1-ndk",
     owner: "nubia",
     strip: {
@@ -30916,7 +30891,7 @@ cc_prebuilt_binary {
                 "libbinder_ndk",
                 "libhardware",
                 "android.hardware.biometrics.fingerprint-V3-ndk",
-                "vendor.zte.fingerprint.ztecmdaidl-V1-ndk_platform",
+                "vendor.zte.fingerprint.ztecmdaidl-V1-ndk",
                 "android.hardware.biometrics.common.thread",
                 "libc++",
                 "libc",
