@@ -6670,6 +6670,38 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "fingerprint.gf95xx.default",
+    owner: "nubia",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/fingerprint.gf95xx.default.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libc++",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libhardware",
+                "libion",
+                "libgf_hal",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libqtigatekeeper",
     owner: "nubia",
     strip: {
@@ -11623,6 +11655,41 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libloc_core",
                 "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgf_hal",
+    owner: "nubia",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libgf_hal.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libc++",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libhardware",
+                "libion",
+                "libbinder",
+                "libQSEEComAPI",
+                "libdmabufheap",
+                "libbinder_ndk",
+                "libvendor.goodix.hardware.biometrics.fingerprint",
                 "libc",
                 "libm",
                 "libdl",
@@ -19203,6 +19270,32 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libvendor.goodix.hardware.biometrics.fingerprint",
+    owner: "nubia",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libbinder_ndk",
+                "libc",
+                "libm",
+                "libdl",
+                "liblog",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libvendorutils",
     owner: "nubia",
     strip: {
@@ -26663,6 +26756,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.zte.fingerprint.ztecmdaidl-V1-ndk_platform",
+    owner: "nubia",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.zte.fingerprint.ztecmdaidl-V1-ndk_platform.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.zte.hardware.camera.transfer-V1-ndk",
     owner: "nubia",
     strip: {
@@ -29288,6 +29406,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "fingerprint-aidl.xml",
+    owner: "nubia",
+    src: "proprietary/vendor/etc/vintf/manifest/fingerprint-aidl.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "imsdcservice-saidl.xml",
     owner: "nubia",
     src: "proprietary/vendor/etc/vintf/manifest/imsdcservice-saidl.xml",
@@ -30759,6 +30886,38 @@ cc_prebuilt_binary {
                 "libqti-utils",
                 "libhidlmemory",
                 "vendor.qti.spu@2.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.zte.fingerprint.ztecmdaidl-service",
+    owner: "nubia",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.zte.fingerprint.ztecmdaidl-service",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libbase",
+                "libbinder_ndk",
+                "libhardware",
+                "android.hardware.biometrics.fingerprint-V3-ndk",
+                "vendor.zte.fingerprint.ztecmdaidl-V1-ndk_platform",
+                "android.hardware.biometrics.common.thread",
                 "libc++",
                 "libc",
                 "libm",

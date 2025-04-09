@@ -881,6 +881,7 @@ PRODUCT_PACKAGES += \
     com.dsi.ant@1.0-impl \
     com.qti.chi.offline \
     com.qti.chi.override \
+    fingerprint.gf95xx.default \
     libqtigatekeeper \
     sensors.hal.tof \
     vendor.qti.hardware.alarm-impl \
@@ -1045,6 +1046,7 @@ PRODUCT_PACKAGES += \
     libgame_enhance \
     libgdtap \
     libgeofencing \
+    libgf_hal \
     libgnss \
     libgnsspps \
     libgps.utils \
@@ -1295,6 +1297,7 @@ PRODUCT_PACKAGES += \
     libtlpd_internal \
     libtlpd_logger \
     libubwcp \
+    libvendor.goodix.hardware.biometrics.fingerprint \
     libvendorutils \
     libvideotxr \
     libvmfilexfer \
@@ -1554,6 +1557,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qspmhal-impl \
     vendor.qti.spu@2.0 \
     vendor.qti.voiceprint@1.0 \
+    vendor.zte.fingerprint.ztecmdaidl-V1-ndk_platform \
     vendor.zte.hardware.camera.transfer-V1-ndk \
     vendor.zte.radio-V1-ndk \
     libDspIOProxy_skel \
@@ -1690,6 +1694,7 @@ PRODUCT_PACKAGES += \
     datafactoryservice-saidl.xml \
     deviceinfo-saidl.xml \
     dpm-saidl.xml \
+    fingerprint-aidl.xml \
     imsdcservice-saidl.xml \
     manifest_identity_credential.xml \
     manifest_non_qmaa.xml \
@@ -1761,6 +1766,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.media.c2@1.0-service \
     vendor.qti.media.c2audio@1.0-service \
     vendor.qti.spu@2.0-service \
+    vendor.zte.fingerprint.ztecmdaidl-service \
     ims-dataservice-daemon \
     ims_rtp_daemon \
     imsdaemon \
