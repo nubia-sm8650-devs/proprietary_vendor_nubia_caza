@@ -1689,7 +1689,6 @@ PRODUCT_PACKAGES += \
     datafactoryservice-saidl.xml \
     deviceinfo-saidl.xml \
     dpm-saidl.xml \
-    fingerprint-aidl.xml \
     imsdcservice-saidl.xml \
     manifest_identity_credential.xml \
     manifest_non_qmaa.xml \
@@ -1761,7 +1760,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.media.c2@1.0-service \
     vendor.qti.media.c2audio@1.0-service \
     vendor.qti.spu@2.0-service \
-    vendor.zte.fingerprint.ztecmdaidl-service \
     ims-dataservice-daemon \
     ims_rtp_daemon \
     imsdaemon \

@@ -29258,15 +29258,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "fingerprint-aidl.xml",
-    owner: "nubia",
-    src: "proprietary/vendor/etc/vintf/manifest/fingerprint-aidl.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "imsdcservice-saidl.xml",
     owner: "nubia",
     src: "proprietary/vendor/etc/vintf/manifest/imsdcservice-saidl.xml",
@@ -30738,38 +30729,6 @@ cc_prebuilt_binary {
                 "libqti-utils",
                 "libhidlmemory",
                 "vendor.qti.spu@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.zte.fingerprint.ztecmdaidl-service",
-    owner: "nubia",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.zte.fingerprint.ztecmdaidl-service",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libbase",
-                "libbinder_ndk",
-                "libhardware",
-                "android.hardware.biometrics.fingerprint-V3-ndk",
-                "vendor.zte.fingerprint.ztecmdaidl-V1-ndk",
-                "android.hardware.biometrics.common.thread",
                 "libc++",
                 "libc",
                 "libm",
