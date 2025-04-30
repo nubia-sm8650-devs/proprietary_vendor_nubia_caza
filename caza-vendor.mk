@@ -875,7 +875,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.bluetooth@1.1-impl-qti \
     android.hardware.gnss-aidl-impl-qti \
-    audio.primary.pineapple \
     camera.qcom.sm8650 \
     camera.qcom \
     com.dsi.ant@1.0-impl \
@@ -930,20 +929,12 @@ PRODUCT_PACKAGES += \
     libSensorsInterface \
     libVoiceSdk \
     libWlanServiceJni \
-    lib_bt_aptx \
-    lib_bt_ble \
-    lib_bt_bundle \
     libadaptive_shutter \
     libadm \
     libadreno_app_profiles \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
-    libagm \
-    libar-acdb \
-    libar-gpr \
-    libar-gsl \
-    libar-pal \
     libarcsoft_beautyshot_high \
     libarcsoft_dualcam_refocus_image \
     libarcsoft_dualcam_refocus_video \
@@ -955,10 +946,6 @@ PRODUCT_PACKAGES += \
     libarcsoft_scbokeh_image \
     libarcsoft_scbokeh_video \
     libarcsoft_superportrait \
-    libarmemlog \
-    libats \
-    libaudio_log_utils \
-    libaudioloop \
     libbacklight-calib \
     libbatching \
     libbitmlenginev2 \
@@ -1014,7 +1001,6 @@ PRODUCT_PACKAGES += \
     libcom.qti.chinodeutils \
     libcommonchiutils \
     libconfigdb \
-    libcustomva_intf \
     libcv_common \
     libdataitems \
     libdehaze_nvx \
@@ -1056,7 +1042,6 @@ PRODUCT_PACKAGES += \
     libhdr10plus \
     libhdr_backlight_adapter \
     libhdr_tm \
-    libhotword_intf \
     libidl \
     libintervmipc \
     libipebpsstriping \
@@ -1100,8 +1085,6 @@ PRODUCT_PACKAGES += \
     liblowi_common \
     liblowi_wifihal \
     liblqe \
-    liblx-ar_util \
-    liblx-osal \
     libmapdata_api \
     libmasc \
     libmcs \
@@ -1408,9 +1391,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.diaghal@1.0_vendor \
     vendor.qti.gnss-V5-ndk \
     vendor.qti.gnss-service \
-    vendor.qti.hardware.AGMIPC@1.0-impl \
-    vendor.qti.hardware.ListenSoundModel@1.0-impl \
-    vendor.qti.hardware.ListenSoundModel@1.0 \
     vendor.qti.hardware.alarm-V1-ndk \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
@@ -1452,7 +1432,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.limits@1.2 \
     vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk \
-    vendor.qti.hardware.pal@1.0-impl \
     vendor.qti.hardware.qccsyshal@1.0_vendor \
     vendor.qti.hardware.qccsyshal@1.1_vendor \
     vendor.qti.hardware.qccsyshal@1.2_vendor \
@@ -1691,8 +1670,6 @@ PRODUCT_PACKAGES += \
     dpm-saidl.xml \
     imsdcservice-saidl.xml \
     manifest_identity_credential.xml \
-    manifest_non_qmaa.xml \
-    manifest_non_qmaa_extn.xml \
     mwqem-saidl.xml \
     qcrilhook-saidl.xml \
     qesdk-manager.xml \
@@ -1730,7 +1707,6 @@ PRODUCT_PACKAGES += \
     ATFWD-daemon \
     adpl \
     adsprpcd \
-    audioadsprpcd \
     cdsprpcd \
     cnd \
     cnss-daemon \
