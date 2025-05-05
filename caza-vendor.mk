@@ -1609,6 +1609,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qesdhal@1.1 \
     vendor.qti.qesdhal@1.2 \
     vendor.qti.qesdhalaidl-V2-ndk \
+    com.google.android.widevine.nonupdatable \
     CACertService \
     CneApp \
     IWlanService \
