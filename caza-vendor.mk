@@ -482,13 +482,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/caza/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     vendor/nubia/caza/proprietary/vendor/etc/ltm_config_BF068_RM692H0_Full_Screen_MAGIC9_DSC_FHD_6P8Inch.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_BF068_RM692H0_Full_Screen_MAGIC9_DSC_FHD_6P8Inch.xml \
     vendor/nubia/caza/proprietary/vendor/etc/media_codecs_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_audio.xml \
-    vendor/nubia/caza/proprietary/vendor/etc/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
-    vendor/nubia/caza/proprietary/vendor/etc/media_codecs_google_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2.xml \
-    vendor/nubia/caza/proprietary/vendor/etc/media_codecs_google_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_audio.xml \
-    vendor/nubia/caza/proprietary/vendor/etc/media_codecs_google_c2_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_video.xml \
-    vendor/nubia/caza/proprietary/vendor/etc/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
-    vendor/nubia/caza/proprietary/vendor/etc/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
-    vendor/nubia/caza/proprietary/vendor/etc/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml \
     vendor/nubia/caza/proprietary/vendor/etc/media_codecs_performance_pineapple.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_pineapple.xml \
     vendor/nubia/caza/proprietary/vendor/etc/media_codecs_pineapple.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_pineapple.xml \
     vendor/nubia/caza/proprietary/vendor/etc/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml \
