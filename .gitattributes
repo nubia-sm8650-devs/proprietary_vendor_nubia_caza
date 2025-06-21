@@ -1,1 +1,2 @@
 proprietary/vendor/etc/camera/udc_512_512_12Binary.bin filter=lfs diff=lfs merge=lfs -text
+proprietary/system/priv-app/NubiaCamera/NubiaCamera.apk filter=lfs diff=lfs merge=lfs -text

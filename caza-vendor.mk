@@ -9,6 +9,12 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/caza/proprietary/product/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
     vendor/nubia/caza/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
     vendor/nubia/caza/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
+    vendor/nubia/caza/proprietary/system/etc/permissions/com.android.camera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.android.camera.xml \
+    vendor/nubia/caza/proprietary/system/etc/pictureclassifier/CameraLabelGroups:$(TARGET_COPY_OUT_SYSTEM)/etc/pictureclassifier/CameraLabelGroups \
+    vendor/nubia/caza/proprietary/system/etc/pictureclassifier/LabelGroups:$(TARGET_COPY_OUT_SYSTEM)/etc/pictureclassifier/LabelGroups \
+    vendor/nubia/caza/proprietary/system/etc/pictureclassifier/MultiScenePictureClassifier.tflite:$(TARGET_COPY_OUT_SYSTEM)/etc/pictureclassifier/MultiScenePictureClassifier.tflite \
+    vendor/nubia/caza/proprietary/system/etc/pictureclassifier/PictureClassifier.tflite:$(TARGET_COPY_OUT_SYSTEM)/etc/pictureclassifier/PictureClassifier.tflite \
+    vendor/nubia/caza/proprietary/system/etc/pictureclassifier/PictureLabels:$(TARGET_COPY_OUT_SYSTEM)/etc/pictureclassifier/PictureLabels \
     vendor/nubia/caza/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/nubia/caza/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/nubia/caza/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
@@ -24,6 +30,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/caza/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
     vendor/nubia/caza/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
     vendor/nubia/caza/proprietary/system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.ims.rcsservice.xml \
+    vendor/nubia/caza/proprietary/system_ext/etc/permissions/vendor.zte.hardware.camera.transferclient.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.zte.hardware.camera.transferclient.xml \
     vendor/nubia/caza/proprietary/system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml \
     vendor/nubia/caza/proprietary/system_ext/etc/seccomp_policy/tcmd.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/tcmd.policy \
     vendor/nubia/caza/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
@@ -1609,6 +1616,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qesdhal@1.2 \
     vendor.qti.qesdhalaidl-V2-ndk \
     com.google.android.widevine.nonupdatable \
+    NubiaCamera \
     CACertService \
     CneApp \
     IWlanService \
@@ -1648,6 +1656,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsuceaidlservice-V1-java \
     vendor.qti.ims.uceaidlservice-V1-java \
     vendor.qti.imsdatachannel \
+    vendor.zte.hardware.camera.transferclient \
     ImsRtpService-aidl.xml \
     android.hardware.drm-service.xml \
     android.hardware.gnss-aidl-service-qti.xml \

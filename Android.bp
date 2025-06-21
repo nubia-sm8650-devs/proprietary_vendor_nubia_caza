@@ -28056,6 +28056,17 @@ prebuilt_apex {
 }
 
 android_app_import {
+    name: "NubiaCamera",
+    owner: "nubia",
+    apk: "proprietary/system/priv-app/NubiaCamera/NubiaCamera.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+}
+
+android_app_import {
     name: "CACertService",
     owner: "nubia",
     apk: "proprietary/vendor/app/CACertService/CACertService.apk",
@@ -28437,6 +28448,15 @@ dex_import {
     owner: "nubia",
     jars: [
         "proprietary/system_ext/framework/vendor.qti.imsdatachannel.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "vendor.zte.hardware.camera.transferclient",
+    owner: "nubia",
+    jars: [
+        "proprietary/system_ext/framework/vendor.zte.hardware.camera.transferclient.jar",
     ],
     system_ext_specific: true,
 }
