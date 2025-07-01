@@ -1066,6 +1066,7 @@ PRODUCT_PACKAGES += \
     libcom.qti.chinodeutils \
     libcommonchiutils \
     libconfigdb \
+    libcpion \
     libcv_common \
     libdataitems \
     libdehaze_nvx \
@@ -1182,6 +1183,7 @@ PRODUCT_PACKAGES += \
     libnicm_recovery \
     libnicm_utils \
     libnicm_vh \
+    liboemcrypto \
     libomp \
     libopencv \
     libopencv3a \
@@ -1346,6 +1348,7 @@ PRODUCT_PACKAGES += \
     libtlpd_crypto \
     libtlpd_internal \
     libtlpd_logger \
+    libtrustedapploader \
     libubwcp \
     libvendor.goodix.hardware.biometrics.fingerprint \
     libvendorutils \
@@ -1779,6 +1782,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qccsyshal_aidl-service.xml \
     vendor.qti.qesdsys.service.xml \
     ATFWD-daemon \
+    KmInstallKeybox \
     adpl \
     adsprpcd \
     cdsprpcd \

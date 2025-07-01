@@ -10727,6 +10727,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcpion",
+    owner: "nubia",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcpion.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libdmabufheap",
+                "libvmmem",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcv_common",
     owner: "nubia",
     strip: {
@@ -14256,6 +14283,41 @@ cc_prebuilt_library_shared {
                 "libdiag",
                 "libqmi_cci",
                 "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liboemcrypto",
+    owner: "nubia",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/liboemcrypto.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "liblog",
+                "libQSEEComAPI",
+                "libhidlbase",
+                "libcpion",
+                "libminkdescriptor",
+                "libcutils",
+                "libtrustedapploader",
+                "libdisplayconfig.qti",
+                "libpower",
+                "libcrypto",
                 "libc++",
                 "libc",
                 "libm",
@@ -19128,6 +19190,34 @@ cc_prebuilt_library_shared {
                 "libdiag",
                 "liblog",
                 "libtlpd_crypto",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtrustedapploader",
+    owner: "nubia",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtrustedapploader.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libminkdescriptor",
+                "libminksocket_vendor",
+                "libqcbor",
                 "libc++",
                 "libc",
                 "libm",
@@ -29517,6 +29607,39 @@ cc_prebuilt_binary {
                 "libhidlbase",
                 "vendor.qti.hardware.radio.atfwd-V1-ndk",
                 "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "KmInstallKeybox",
+    owner: "nubia",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/KmInstallKeybox",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libcrypto",
+                "libkeymasterprovision",
+                "libqmi_cci",
+                "libqmi_common_so",
+                "libkeymasterutils",
+                "libkeymasterdeviceutils",
+                "libqtikeymaster4",
                 "libc++",
                 "libc",
                 "libm",
